@@ -27,8 +27,11 @@ public class ChangingColorsGUI {
         colorClicker = new JButton("Change the Colors");
 
         //create a new Custom color
-
+        Color panelBackground = new Color(33, 33, 33);
+        Color buttonForeground = new Color(202, 217, 179);
+        Color buttonBackground = new Color(0,0,0);
         //Set the colors of our buttons and panel
+        panel.setBackground(Color.CYAN);
 
         panel.add(colorClicker);
         window.add(panel);

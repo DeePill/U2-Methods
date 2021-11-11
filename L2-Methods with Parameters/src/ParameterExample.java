@@ -3,11 +3,18 @@ import javax.swing.*;
 public class ParameterExample {
 
     public static void main(String[] args) {
-        area();
-        perimeter();
+
+        double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width?"));
+        double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
+
+
+        area(width, length);
+
     }
 
-    public static void area(){
+}
+
+    public static void area(double width, double length){
         double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width?"));
         double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
 
@@ -15,7 +22,7 @@ public class ParameterExample {
         JOptionPane.showMessageDialog(null, "The area is " + area);
     }
 
-    public static void perimeter(){
+
         double width = Double.parseDouble(JOptionPane.showInputDialog("What is the width?"));
         double length = Double.parseDouble(JOptionPane.showInputDialog("What is the length"));
 
